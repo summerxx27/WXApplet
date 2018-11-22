@@ -1,0 +1,17 @@
+<block wx:for="{{userListInfo}}" wx:for-item="item" wx:for-index="index">
+	<view class="ui_cell">
+
+		<view class="ui_cell_bd">
+			<view class="ui_cell_bd_p"> {{item.text}} </view>
+      <view class="ui_cell_title"> {{item.des}} </view>
+		</view>
+    
+		<view wx:if="{{item.isunread}}" class="badge">{{item.unreadNum}}      </view>
+
+		<view class="with_arrow">
+      <image style="width: 20px; height: 15px"src="../resource/jiantou.png"></image>
+    </view>
+
+	</view>
+</block>
+
